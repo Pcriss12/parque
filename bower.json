@@ -1,0 +1,30 @@
+{
+  "name": "pgermanico",
+  "description": "Pagina Turistica",
+  "main": "index.html",
+  "authors": [
+    "Paula Rodriguez"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Pcriss12/parque",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^0.4.2",
+    "oclazyload": "^1.1.0",
+    "angular-css": "^1.0.8",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "angular-messages": "^1.6.4",
+    "angular-material": "^1.1.4",
+    "angular-cookies": "^1.6.4",
+    "angular-local-storage": "^0.7.1",
+    "ngmap": "^1.18.4"
+  }
+}

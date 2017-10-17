@@ -1,7 +1,7 @@
 'use strict';
 var gulp = require('gulp');
 var nib = require('nib');
- var nodemon = require('gulp-nodemon');
+var nodemon = require('gulp-nodemon');
 var connect = require('gulp-connect');
 
 

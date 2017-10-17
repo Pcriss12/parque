@@ -22,7 +22,19 @@
 			// controllerAs: 'ctrl'
 		})
 
+		.state('activity',{
+			url: '/Activity',
+			templateUrl: './components/activity/activity.html',
+			css: './css/style.activity.css',
+			// resolve: {
+			// 	load: ['$ocLazyLoad', function($ocLazyLoad){
+			// 		return $ocLazyLoad.load('./components/activity/activity.controller.js')
+			// 	}]
+			// },
+			// controller: 'activityController',
+			// controllerAs: 'ctrl'
+		})
+
 		$urlRouterProvider.otherwise('/Home');
-	}
   };
 })();

@@ -35,6 +35,19 @@
 			// controllerAs: 'ctrl'
 		})
 
+		.state('reserve',{
+			url: '/Reserve',
+			templateUrl: './components/reserve/reserve.html',
+			css: './css/style.reserve.css',
+			// resolve: {
+			// 	load: ['$ocLazyLoad', function($ocLazyLoad){
+			// 		return $ocLazyLoad.load('./components/reserve/reserve.controller.js')
+			// 	}]
+			// },
+			// controller: 'reserveController',
+			// controllerAs: 'ctrl'
+		})
+
 		$urlRouterProvider.otherwise('/Home');
   };
 })();

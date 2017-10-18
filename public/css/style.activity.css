@@ -380,10 +380,30 @@ table a, #comments a{background-color:inherit;}
 	.font-x3{font-size:1.6rem;}
 }
 
-.Activity{background-image: url("../img/img7.jpg"); background-repeat: no-repeat;
-background-size: 100%; background-attachment: fixed;}
+.Activity{
+	background-image: url("../img/img7.jpg"); 
+	background-repeat: 
+	no-repeat;
+	background-size: 100%; 
+	background-attachment: 
+	fixed;
+	text-align: center;
+	justify-content: center;
+}
 
-.blank{
-	background-color: white;
-	background-size: 100%;
+.blank1{
+	background-color: #ffffff;
+	width: 100%;
+	height: 1200px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 20px;
+}
+
+.blank2{
+	background-color: #ffffff;
+	width: 100%;
+	height: 750px;
+	margin-bottom: 50px;
+	padding: 20px;
 }

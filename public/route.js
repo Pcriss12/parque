@@ -1,7 +1,7 @@
 (function(){
 	'use strict'
 	angular
-		.module('appRoutes', ['ui.router', 'oc.lazyLoad', 'ngMessages', 'angularCSS', 'ngFileUpload', 'ngPassword'])
+		.module('appRoutes', ['ui.router', 'oc.lazyLoad', 'ngMessages', 'angularCSS'])
 		.config(configuration);
 
 	configuration.$inject = ['$stateProvider', '$urlRouterProvider'];
@@ -12,16 +12,9 @@
 		.state('landing',{
 			url: '/Home',
 			templateUrl: './components/landing/landing.html',
-			css: './css/style.css',
-			resolve: {
-				load: ['$ocLazyLoad', function($ocLazyLoad){
-					return $ocLazyLoad.load('./components/landing/landing.controller.js')
-				}]
-			},
-			controller: 'landingController',
-			controllerAs: 'ctrl'
+			css: './css/layout.css'
 		})
 
 		$urlRouterProvider.otherwise('/Home');
-	}
-})
+	};
+})();

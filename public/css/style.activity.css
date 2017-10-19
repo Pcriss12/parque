@@ -22,26 +22,6 @@
 #topbar .fl_right .pushright li:last-child{margin-right:0;}
 
 
-/* Page Intro
---------------------------------------------------------------------------------------------------------------- */
-#pageintro{padding:50px 0 150px;}
-
-#pageintro .introtxt{display:block; position:relative; max-width:50%; padding-left:30px; z-index:1;}
-#pageintro .introtxt *{margin:0; line-height:1;}
-#pageintro .introtxt::after{position:absolute; top:-20px; bottom:-20px; left:0; width:60px; border-left:2px solid; content:""; z-index:-1;}
-#pageintro .introtxt .heading{font-size:42px; text-transform:uppercase; letter-spacing:10px; padding-bottom: 15px;}
-
-#pageintro .introtxt p{}
-#pageintro .introtxt p:first-of-type{margin-bottom:5px; font-style:italic;}
-#pageintro .introtxt p:last-of-type{margin-bottom:30px; text-transform:uppercase; letter-spacing:5px;}
-
-
-/* Full Width Split Box
---------------------------------------------------------------------------------------------------------------- */
-.split{}
-.split .box{display:block; width:70%; margin-left:15%;  padding:8% 4%;}
-
-
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
 .container{padding:80px 0;}
@@ -58,45 +38,6 @@
 .services article div *{margin:0;}
 .services article div .heading{margin-bottom:10px; font-size:1.2rem; font-weight:700;}
 .services article div footer{margin-top:15px;}
-/* Gallery
----------------------------------------------------------------------------------------------------------------*/
-#showcase{display:inline-block; width:100%;}
-#showcase ul{margin:0 0 0 20px; padding:0; list-style-type:none;}
-#showcase ul li{display:inline-block; position:relative; float:left; width:300px; margin-right: 10px; margin-top: 10px}
-#showcase ul li:first-child, #showcase ul li.first{margin-left:0;}
-#showcase ul li figure{}
-#showcase ul li a{display:inline-block; font-size:14px;}
-#showcase ul li a strong{display:inline-block; position:absolute; bottom:5px; left:5px; width:270px; margin:0; padding:5px 10px; text-align:center; font-weight:normal; text-transform:uppercase;}
-#showcase ul li a:hover strong{display:none;}
-
-/* Gallery */
-#showcase h2::before{border-top:3px solid #303030;}
-#showcase h2 span{color:#FFFFFF; background-color:#303030;}
-#showcase ul li a{color:#FFFFFF; background-color:transparent; border:5px solid #FFFFFF;}
-#showcase ul li figure a strong{ width: 290px; background-color:hsla(0,0%,0%,.5);}
-#showcase ul li a:hover{border-color:hsla(139,39%,61%,.5);}
-
-/* Comments */
-#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
-#comments li{margin:0 0 10px 0; padding:15px;}
-#comments .avatar{float:right; margin:0 0 10px 10px; padding:3px; border:1px solid;}
-#comments address{font-weight:bold;}
-#comments time{font-size:smaller;}
-#comments .comcont{display:block; margin:0; padding:0;}
-#comments .comcont p{margin:10px 5px 10px 0; padding:0;}
-
-#comments form{display:block; width:100%;}
-#comments input, #comments textarea{width:100%; padding:10px; border:1px solid;}
-#comments textarea{overflow:auto;}
-#comments div{margin-bottom:15px;}
-#comments input[type="submit"], #comments input[type="reset"]{display:inline-block; width:auto; min-width:150px; margin:0; padding:8px 5px; cursor:pointer;}
-
-/* Sidebar */
-.container .sidebar{}
-
-.sidebar .sdb_holder{margin-bottom:50px;}
-.sidebar .sdb_holder:last-child{margin-bottom:0;}
-
 
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
@@ -196,27 +137,6 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #backtotop:hover{opacity:1;}
 
 
-/* Tables
---------------------------------------------------------------------------------------------------------------- */
-table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;}
-table, th{table-layout:auto;}
-table{width:100%; margin-bottom:15px;}
-th, td{padding:5px 8px;}
-td{border-width:0 1px;}
-
-
-/* Gallery
---------------------------------------------------------------------------------------------------------------- */
-#gallery{display:block; width:100%; margin-bottom:50px;}
-#gallery figure figcaption{display:block; width:100%; clear:both;}
-#gallery li{margin-bottom:30px;}
-
-
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
 
 
 /* Colours

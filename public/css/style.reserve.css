@@ -299,3 +299,18 @@ table a, #comments a{background-color:inherit;}
 	.font-x2{font-size:1.4rem;}
 	.font-x3{font-size:1.6rem;}
 }
+
+.Reserve{
+	background-image: url("../img/img8.jpg"); 
+	background-repeat: 
+	no-repeat;
+	background-size: 100%; 
+	background-attachment: 
+	fixed;
+	text-align: center;
+	justify-content: center;
+}
+.reserve1{
+	background-color: #fff;
+	width: 100%;
+}

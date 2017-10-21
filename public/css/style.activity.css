@@ -301,7 +301,7 @@ table a, #comments a{background-color:inherit;}
 }
 
 .Activity{
-	background-image: url("../img/img7.jpg"); 
+	background-image: url("../img/img9.jpg"); 
 	background-repeat: 
 	no-repeat;
 	background-size: 100%; 
@@ -311,23 +311,28 @@ table a, #comments a{background-color:inherit;}
 	justify-content: center;
 }
 
+.intro{
+	background-color: #ffffff;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 110px;
+	padding-top: 50px;
+}
 .blank1{
 	background-color: #ffffff;
 	width: 100%;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	padding: 20px;
-	height: inherit;
+	margin: 0 auto;
+	margin-bottom: 100px;
 }
 
 .blank2{
 	background-color: #ffffff;
 	width: 100%;
-	margin-bottom: 80px;
-	padding: 20px;
 	justify-content: center;
 	text-align: center;
-	height: inherit;
+	padding: 30px;
+	margin: 0 auto;	
+	margin-bottom: 130px;
 }
 
 .instalation{

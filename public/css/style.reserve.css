@@ -313,4 +313,9 @@ table a, #comments a{background-color:inherit;}
 .reserve1{
 	background-color: #fff;
 	width: 100%;
+	text-align: center;
+	justify-content: center;
+}
+.reserve1 .dates{
+	margin-bottom: 50px;
 }

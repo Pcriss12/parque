@@ -139,3 +139,7 @@ footer{
 footer a,footer a:hover{
     color: #88C425;
 }
+.modal-body img{
+    height: 600px; 
+    overflow-y: auto;
+}

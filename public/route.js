@@ -1,7 +1,7 @@
 (function(){
 	'use strict'
 	angular
-		.module('appRoutes', ['ui.router', 'oc.lazyLoad', 'ngMessages', 'angularCSS'])
+		.module('appRoutes', ['ui.router', 'oc.lazyLoad', 'ngMessages', 'angularCSS', 'ngAnimate'])
 		.config(configuration);
 
 	configuration.$inject = ['$stateProvider', '$urlRouterProvider'];
@@ -15,6 +15,11 @@
 			css: './css/layout.css'
 		})
 
+		.state('gallery',{
+			url: '/gallery',
+			templateUrl: './components/gallery/gallery.html',
+			css: './css/galleryStyle.css'
+		})
 		$urlRouterProvider.otherwise('/Home');
 	};
 })();

@@ -222,7 +222,7 @@ label span{color:#FF0000; background-color:inherit;}
 input:focus, textarea:focus, *:required:focus{border-color:#56AED4;}
 .overlay{color:#FFFFFF; background-color:inherit;}
 .overlay::after{color:inherit; background-image: url("../img/background1.jpg");  background-repeat: no-repeat;
-background-size: 100%; background-attachment: fixed;}
+background-size: 100%; background-attachment: fixed; background-position: center top;}
 .nospace{
 	padding-bottom: 25px;
 }

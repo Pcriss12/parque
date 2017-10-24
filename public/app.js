@@ -1,6 +1,6 @@
 (function() {
   angular
-    .module('park', ['appRoutes', 'ngMaterial', 'LocalStorageModule', 'ngMap'])
+    .module('park', ['appRoutes', 'ngMaterial', 'LocalStorageModule', 'ngMap', 'ngAnimate'])
     .config(function($mdThemingProvider) {
       // $mdThemingProvider.theme('default')
       //   .primaryPalette('indigo')

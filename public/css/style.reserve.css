@@ -315,7 +315,19 @@ table a, #comments a{background-color:inherit;}
 	width: 100%;
 	text-align: center;
 	justify-content: center;
+	padding: 60px 0px;
 }
 .reserve1 .dates{
 	margin-bottom: 50px;
+	margin-left: 38.5%;
+}
+
+.choose{
+	border: 1px solid #bdc3c7;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.spaces{
+	margin-top: 60px;
 }

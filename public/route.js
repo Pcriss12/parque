@@ -20,6 +20,7 @@
 			templateUrl: './components/gallery/gallery.html',
 			css: './css/galleryStyle.css'
 		})
+
 		$urlRouterProvider.otherwise('/Home');
 	};
 })();

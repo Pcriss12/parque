@@ -1,7 +1,7 @@
 (function(){
 	'use strict'
 	angular
-		.module('appRoutes', ['ui.router', 'oc.lazyLoad', 'ngMessages', 'angularCSS'])
+		.module('appRoutes', ['ui.router', 'oc.lazyLoad', 'ngMessages', 'angularCSS', 'ngAnimate'])
 		.config(configuration);
 
 	configuration.$inject = ['$stateProvider', '$urlRouterProvider'];
@@ -48,6 +48,17 @@
 			// controllerAs: 'ctrl'
 		})
 
+		.state('gallery',{
+			url: '/gallery',
+			templateUrl: './components/gallery/gallery.html',
+			css: './css/galleryStyle.css'
+		})
+
+		.state('information',{
+			url: '/Information',
+			templateUrl: './components/information/information.html',
+			css: './css/layout.css'
+		})
 		$urlRouterProvider.otherwise('/Home');
   };
 })();

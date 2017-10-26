@@ -21,6 +21,11 @@
 			css: './css/galleryStyle.css'
 		})
 
+		.state('information',{
+			url: '/Information',
+			templateUrl: './components/information/information.html',
+			css: './css/layout.css'
+		})
 		$urlRouterProvider.otherwise('/Home');
 	};
 })();

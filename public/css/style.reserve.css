@@ -2,6 +2,9 @@
 
 @import url("framework.css");
 
+h3{
+	margin-bottom: 20px;
+}
 .Reserve{
 	background-image: url("../img/img8.jpg"); 
 	background-repeat: 
@@ -35,4 +38,22 @@
 }
 .choose h3{
 	margin-top: 50px;
+}
+#user{
+	margin-bottom: 50px;
+	margin-top: 80px;
+	margin-left: 14%;
+	width: 70%;
+}
+#mail{
+	margin-bottom: 60px;
+	margin-top: 80px;
+	margin-left: 14%;
+	width: 70%;	
+}
+#telephone{
+	margin-bottom: 60px;
+	margin-top: 80px;
+	margin-left: 14%;
+	width: 70%;	
 }

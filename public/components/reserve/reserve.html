@@ -5,20 +5,45 @@
 <!-- main -->
 <section class="reserve1 row">
 
-		<div class="row">
+		<form class="frmReserve row" name="frmReserve" ng-submit="ctrl.save(ctrl.reserve)" novalidate autocomplete="off">
 			<div class="choose col-md-8 col-md-offset-2">
+
+        <h2>Reserva</h2>
+               
+        <div id="user">
+          <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              <input id="name" type="text" class="form-control" name="name" placeholder="Nombre completo" type="text" ng-model="ctrl.reserve.name">
+          </div>
+        </div>
+
+        <div id="mail">
+          <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+              <input id="email" type="text" class="form-control" name="email" placeholder="Correo electronico" ng-model="ctrl.reserve.email">
+          </div>
+        </div>
+
+        
+        <div id="telephone">
+          <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+              <input id="phone" type="text" class="form-control" name="phone" placeholder="Numero de telefono" ng-model="ctrl.reserve.phone">
+          </div>
+        </div>
+
         <h3>Espacio a reservar</h3>
-        <div class="options">
+        <div class="options" ng-model="ctrl.reserve.home">
           <label class="checkbox-inline"><input type="checkbox" value="Camping">Camping</label>
           <label class="checkbox-inline"><input type="checkbox" value="Cabaña">Cabaña</label>
           <label class="checkbox-inline"><input type="checkbox" value="Areas">Areas Familiares</label>
         </div>
 
         <h3>Caminata a reservar</h3>
-        <div class="options">
-          <label class="checkbox-inline"><input type="checkbox" value="Camping">3 kilómetros</label>
-          <label class="checkbox-inline"><input type="checkbox" value="Cabaña">5 kilómetros</label>
-          <label class="checkbox-inline"><input type="checkbox" value="Areas">7 kilómetros</label>
+        <div class="options" ng-model="ctrl.reserve.walk">
+          <label class="checkbox-inline"><input type="checkbox" value="3 kilómetros">3 kilómetros</label>
+          <label class="checkbox-inline"><input type="checkbox" value="5 kilómetros">5 kilómetros</label>
+          <label class="checkbox-inline"><input type="checkbox" value="7 kilómetros">7 kilómetros</label>
         </div>
 
         <div class="spaces">
@@ -27,27 +52,27 @@
 
           <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
             <span class="input-group-addon"> <span class="fa fa-calendar"></span></span>
-            <input type="date" name="">
+            <input type="date" name="dateIn" ng-model="ctrl.reserve.dateIn">
           </div>
           <h4>Fecha de salida</h4>
           <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
             <span class="input-group-addon"> <span class="fa fa-calendar"></span></span>
-            <input type="date" name="">
+            <input type="date" name="dateOff" ng-model="ctrl.reserve.dateOff">
           </div>
         </div>
       
 
       <div class="form-group">
         <label for="comment">Comentarios para la reserva:</label>
-        <textarea class="form-control" rows="5" id="comment"></textarea>
+        <textarea class="form-control" rows="5" id="comment" name="comment" ng-model="ctrl.reserve.comment"></textarea>
       </div>
 
       <div>
-        <button type="button" class="btn btn-success">Reservar</button>
+        <button ng-click="ctrl.save()" ng-disabled="frmReserve.$invalid" type="button" class="btn btn-success">Reservar</button>
       </div>
       </div>
 
-		</div>
+		</form>
 </section>
 
 
@@ -55,3 +80,22 @@
 <div class="wrapper row4">
     <div ng-include="'include/footer.html'"></div>
   </div>
+
+
+  <!--modal de reserva-->
+  <div class="modal fade" id="modalMsj" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" id="msjNoReg">
+          <h2 ng-show="vm.userReg"><span class="glyphicon glyphicon-ok"></span>Su reserva fue existosa.</h2>        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fin modal mensajes de registro   -->

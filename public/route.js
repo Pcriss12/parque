@@ -39,13 +39,13 @@
 			url: '/Reserve',
 			templateUrl: './components/reserve/reserve.html',
 			css: './css/style.reserve.css',
-			// resolve: {
-			// 	load: ['$ocLazyLoad', function($ocLazyLoad){
-			// 		return $ocLazyLoad.load('./components/reserve/reserve.controller.js')
-			// 	}]
-			// },
-			// controller: 'reserveController',
-			// controllerAs: 'ctrl'
+			resolve: {
+				load: ['$ocLazyLoad', function($ocLazyLoad){
+					return $ocLazyLoad.load('./components/reserve/reserve.controller.js')
+				}]
+			},
+			controller: 'reserveController',
+			controllerAs: 'ctrl'
 		})
 
 		.state('gallery',{

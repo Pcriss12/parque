@@ -1,12 +1,21 @@
-<section class="row container-fluid Reserve">
-	<div ng-include="'include/nav.html'"></div>
-</section>
 
-<!-- main -->
+  <div id="top">
+  <div class="bgded" style="background-image:url('./img/img8.jpg'); background-repeat: no-repeat; background-position: center center;">
+  <div ng-include="'include/nav.html'"></div>
+  <div class="wrapper row2">
+    <div id="breadcrumb" class="hoc clear">
+      <span class="fa fa-facebook-official"> facebook.com</span>
+    </div>
+  </div>
+</div>
+<div class="wrapper row3">
+  <main class="hoc container clear">
+    
+    <!-- main -->
 <section class="reserve1 row">
 
-		<form class="frmReserve row" name="frmReserve" ng-submit="ctrl.save(ctrl.reserve)" novalidate autocomplete="off">
-			<div class="choose col-md-8 col-md-offset-2">
+    <form class="frmReserve row" name="frmReserve" ng-submit="ctrl.save(ctrl.reserve)" novalidate autocomplete="off">
+      <div class="choose col-md-8 col-md-offset-2">
 
         <h2>Reserva</h2>
                
@@ -72,15 +81,22 @@
       </div>
       </div>
 
-		</form>
+    </form>
 </section>
 
-
-<!-- footer -->
+  </main>
+</div>
 <div class="wrapper row4">
     <div ng-include="'include/footer.html'"></div>
-  </div>
-
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="./public/scripts/jquery.min.js"></script>
+<script src="./public/scripts/jquery.backtotop.js"></script>
+<script src="./public/scripts/jquery.mobilemenu.js"></script>
+<!-- IE9 Placeholder Support -->
+<script src="./public/scripts/jquery.placeholder.min.js"></script>
+</div>
 
   <!--modal de reserva-->
   <div class="modal fade" id="modalMsj" role="dialog">
@@ -98,4 +114,4 @@
       </div>
     </div>
   </div>
-  <!-- fin modal mensajes de registro   -->
+  <!-- fin modal reserva   -->

@@ -1,9 +1,6 @@
 @import url("framework.css");
 
 .Activity{
-	background-image: url("../img/img9.jpg"); 
-	background-repeat: 
-	no-repeat;
 	background-size: 100%; 
 	background-attachment: 
 	fixed;
@@ -17,6 +14,8 @@
 	margin: 0 auto;
 	margin-top: 110px;
 	padding-top: 50px;
+	justify-content: center;
+	text-align: center;
 }
 .blank1{
 	background-color: #ffffff;
@@ -38,6 +37,10 @@
 .instalation{
 	padding-top: 50px;
 	padding-bottom: 50px;
+}
+.instalation #contInsta{
+	justify-content: center;
+	text-align: center;
 }
 
 .blank1 h1,.blank1 h3{

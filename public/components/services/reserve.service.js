@@ -6,7 +6,7 @@
         reserveService.$inject = ['$http'];
 
     function reserveService($http) {
-        var request = [];
+        var reserve = [];
 
         var publicAPI = {
             setReserve: _setReserve,
@@ -14,12 +14,12 @@
         };
         return publicAPI;
 
-        function _setRequest(pReserve) {
+        function _setReserve(pReserve) {
             console.log(pReserve);
             return $http.post('http://localhost:3000/api/save_reserve', pReserve);
         }
 
-        function _getRequest() {
+        function _getReserve() {
             return $http.get('http://localhost:3000/api/get_all_reserve');
         }
     }

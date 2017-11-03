@@ -37,22 +37,22 @@
         <div id="telephone">
           <div class="input-group">
               <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-              <input id="phone" type="text" class="form-control" name="phone" placeholder="Numero de telefono" ng-model="ctrl.reserve.phone">
+              <input id="phone" type="text" class="form-control" name="phone" placeholder="Numero de telefono" ng-model="ctrl.reserve.phone" ng-pattern="/^[0-9]{8}$/">
           </div>
         </div>
 
         <h3>Espacio a reservar</h3>
-        <div class="options" ng-model="ctrl.reserve.home" name="home" id="home">
-          <label class="checkbox-inline"><input type="checkbox" value="Camping">Camping</label>
-          <label class="checkbox-inline"><input type="checkbox" value="Cabaña">Cabaña</label>
-          <label class="checkbox-inline"><input type="checkbox" value="Areas">Areas Familiares</label>
+        <div class="options" name="home" id="home">
+          <label class="checkbox-inline"><input type="checkbox" value="Camping" ng-model="ctrl.reserve.homeA">Camping</label>
+          <label class="checkbox-inline"><input type="checkbox" value="Cabaña" ng-model="ctrl.reserve.homeB">Cabaña</label>
+          <label class="checkbox-inline"><input type="checkbox" value="Areas Familiares" ng-model="ctrl.reserve.homeC">Areas Familiares</label>
         </div>
 
         <h3>Caminata a reservar</h3>
-        <div class="options" ng-model="ctrl.reserve.walk" name="walk" id="walk">
-          <label class="checkbox-inline"><input type="checkbox" value="3 kilómetros">3 kilómetros</label>
-          <label class="checkbox-inline"><input type="checkbox" value="5 kilómetros">5 kilómetros</label>
-          <label class="checkbox-inline"><input type="checkbox" value="7 kilómetros">7 kilómetros</label>
+        <div class="options" name="walk" id="walk">
+          <label class="checkbox-inline"><input type="checkbox" value="3 kilómetros"  ng-model="ctrl.reserve.walk3">3 kilómetros</label>
+          <label class="checkbox-inline"><input type="checkbox" value="5 kilómetros"  ng-model="ctrl.reserve.walk5">5 kilómetros</label>
+          <label class="checkbox-inline"><input type="checkbox" value="7 kilómetros"  ng-model="ctrl.reserve.walk7">7 kilómetros</label>
         </div>
 
         <div class="spaces">
@@ -61,7 +61,7 @@
 
           <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
             <span class="input-group-addon"> <span class="fa fa-calendar"></span></span>
-            <input type="date" name="dateIn" ng-model="ctrl.reserve.dateIn" name="dateIn">
+            <input type="date" name="dateIn" ng-model="ctrl.reserve.dateIn" name="dateIn"> 
           </div>
           <h4>Fecha de salida</h4>
           <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
@@ -77,7 +77,7 @@
       </div>
 
       <div>
-        <button ng-click="ctrl.save()" ng-disabled="frmReserve.$invalid" type="button" class="btn btn-success">Reservar</button>
+        <button ng-click="ctrl.reset()" ng-disabled="frmReserve.$invalid" type="submit" class="btn btn-success">Reservar</button>
       </div>
       </div>
 

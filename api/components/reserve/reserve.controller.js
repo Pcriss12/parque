@@ -5,9 +5,13 @@ module.exports.save = function(req, res){
     email : req.body.email,
     name : req.body.name,
     phone : req.body.phone,
-    home : req.body.home,
-    walk : req.body.walk,
-    dateOn : req.body.dateOn,
+    homeA : req.body.homeA,
+    homeB : req.body.homeB,
+    homeC : req.body.homeC,
+    walk3 : req.body.walk3,
+    walk5 : req.body.walk5,
+    walk7 : req.body.walk7,
+    dateIn : req.body.dateIn,
     dateOff : req.body.dateOff,
     comment : req.body.comment
   });

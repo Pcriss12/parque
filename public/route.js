@@ -12,27 +12,13 @@
 		.state('landing',{
 			url: '/Home',
 			templateUrl: './components/landing/landing.html',
-			css: './css/layout.css',
-			// resolve: {
-			// 	load: ['$ocLazyLoad', function($ocLazyLoad){
-			// 		return $ocLazyLoad.load('./components/landing/landing.controller.js')
-			// 	}]
-			// },
-			// controller: 'landingController',
-			// controllerAs: 'ctrl'
+			css: './css/layout.css'
 		})
 
 		.state('activity',{
 			url: '/Activity',
 			templateUrl: './components/activity/activity.html',
-			css: './css/style.activity.css',
-			// resolve: {
-			// 	load: ['$ocLazyLoad', function($ocLazyLoad){
-			// 		return $ocLazyLoad.load('./components/activity/activity.controller.js')
-			// 	}]
-			// },
-			// controller: 'activityController',
-			// controllerAs: 'ctrl'
+			css: './css/style.activity.css'
 		})
 
 		.state('reserve',{

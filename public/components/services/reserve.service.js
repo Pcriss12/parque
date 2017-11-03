@@ -2,10 +2,10 @@
     'use strict'
     angular
         .module('park')
-        .service('requestReserve', requestReserve);
-        requestReserve.$inject = ['$http'];
+        .service('reserveService', reserveService);
+        reserveService.$inject = ['$http'];
 
-    function requestReserve($http) {
+    function reserveService($http) {
         var request = [];
 
         var publicAPI = {

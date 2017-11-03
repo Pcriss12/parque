@@ -33,14 +33,14 @@
         </div>
 
         <h3>Espacio a reservar</h3>
-        <div class="options" ng-model="ctrl.reserve.home">
+        <div class="options" ng-model="ctrl.reserve.home" name="home" id="home">
           <label class="checkbox-inline"><input type="checkbox" value="Camping">Camping</label>
           <label class="checkbox-inline"><input type="checkbox" value="Cabaña">Cabaña</label>
           <label class="checkbox-inline"><input type="checkbox" value="Areas">Areas Familiares</label>
         </div>
 
         <h3>Caminata a reservar</h3>
-        <div class="options" ng-model="ctrl.reserve.walk">
+        <div class="options" ng-model="ctrl.reserve.walk" name="walk" id="walk">
           <label class="checkbox-inline"><input type="checkbox" value="3 kilómetros">3 kilómetros</label>
           <label class="checkbox-inline"><input type="checkbox" value="5 kilómetros">5 kilómetros</label>
           <label class="checkbox-inline"><input type="checkbox" value="7 kilómetros">7 kilómetros</label>
@@ -52,12 +52,12 @@
 
           <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
             <span class="input-group-addon"> <span class="fa fa-calendar"></span></span>
-            <input type="date" name="dateIn" ng-model="ctrl.reserve.dateIn">
+            <input type="date" name="dateIn" ng-model="ctrl.reserve.dateIn" name="dateIn">
           </div>
           <h4>Fecha de salida</h4>
           <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
             <span class="input-group-addon"> <span class="fa fa-calendar"></span></span>
-            <input type="date" name="dateOff" ng-model="ctrl.reserve.dateOff">
+            <input type="date" name="dateOff" ng-model="ctrl.reserve.dateOff" name="dateOff">
           </div>
         </div>
       

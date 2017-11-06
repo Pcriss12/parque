@@ -23,6 +23,7 @@
     "gulp-nodemon": "^2.2.1",
     "md-date-picker": "^0.1.0",
     "mongoose": "^4.12.3",
-    "nib": "^1.1.2"
+    "nib": "^1.1.2",
+    "nodemailer": "^4.3.1"
   }
 }

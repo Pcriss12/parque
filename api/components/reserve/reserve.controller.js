@@ -1,4 +1,5 @@
 var Reserve = require('./reserve.model.js');
+var nodemailer = require('nodemailer');
 
 module.exports.save = function(req, res){
   var newReserve = new Reserve({
@@ -15,6 +16,30 @@ module.exports.save = function(req, res){
     dateOff : req.body.dateOff,
     comment : req.body.comment
   });
+
+    var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      // user: 'email',
+      // pass: 'pass'
+    }
+  });
+
+  var mailOptions = {
+    from: 'email',
+    to: req.body.email,
+    subject: 'Confirmación de reserva ',
+    text: 'Saludos: ' + req.body.name 
+  };
+
+  transporter.sendMail(mailOptions, function(error, info) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
+
 //Guardar solicitud
   newReserve.save(function(err){
     if(err){

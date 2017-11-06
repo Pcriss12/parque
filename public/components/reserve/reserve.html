@@ -22,14 +22,14 @@
         <div id="user">
           <div class="input-group">
               <span class="input-group-addon"><i class="fa fa-user"></i></span>
-              <input id="name" type="text" class="form-control" name="name" placeholder="Nombre completo" type="text" ng-model="ctrl.reserve.name">
+              <input id="name" type="text" class="form-control" name="name" placeholder="Nombre completo" type="text" ng-model="ctrl.reserve.name" ng-pattern="/^[a-zA-Z\s]*$/" required>
           </div>
         </div>
 
         <div id="mail">
           <div class="input-group">
               <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-              <input id="email" type="text" class="form-control" name="email" placeholder="Correo electronico" ng-model="ctrl.reserve.email">
+              <input id="email" type="text" class="form-control" name="email" placeholder="Correo electronico" ng-model="ctrl.reserve.email" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" required>
           </div>
         </div>
 
@@ -37,7 +37,7 @@
         <div id="telephone">
           <div class="input-group">
               <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-              <input id="phone" type="text" class="form-control" name="phone" placeholder="Numero de telefono" ng-model="ctrl.reserve.phone" ng-pattern="/^[0-9]{8}$/">
+              <input id="phone" type="text" class="form-control" name="phone" placeholder="Numero de telefono" ng-model="ctrl.reserve.phone" ng-pattern="/^[0-9]{8}$/" required>
           </div>
         </div>
 
@@ -61,12 +61,12 @@
 
           <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
             <span class="input-group-addon"> <span class="fa fa-calendar"></span></span>
-            <input type="date" id="Date" ng-model="ctrl.reserve.dateIn" name="dateIn" min-date="today" format-day='d' max-mode="day" show-weeks="false"> 
+            <input type="date" id="Date" ng-model="ctrl.reserve.dateIn" name="dateIn" min-date="today" format-day='d' max-mode="day" show-weeks="false" required=""> 
           </div>
           <h4>Fecha de salida</h4>
           <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
             <span class="input-group-addon"> <span class="fa fa-calendar"></span></span>
-            <input type="date" id="Date" ng-model="ctrl.reserve.dateOff" name="dateOff" min-date="today" format-day='d' max-mode="ctrl.reserve.dateIn" show-weeks="false">
+            <input type="date" id="Date" ng-model="ctrl.reserve.dateOff" name="dateOff" min-date="today" format-day='d' max-mode="ctrl.reserve.dateIn" show-weeks="false" required="">
             
           </div>
         </div>

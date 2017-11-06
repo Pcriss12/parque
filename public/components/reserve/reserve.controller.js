@@ -3,13 +3,16 @@
     angular
         .module('park')
         .controller('reserveController', reserveController);
-        reserveController.$inject = ['$http','reserveService']; 
+        reserveController.$inject = ['$http','$scope','reserveService']; 
 
-    function reserveController($http,reserveService) {
+    function reserveController($http,$scope,reserveService) {
        var ctrl = this;
-       	   ctrl.reserve = {};
-           ctrl.date = new Date();
-           ctrl.reserves="";
+       	   ctrl.reserve = {};       
+           ctrl.reserves= "";
+
+       var today = new Date().toISOString().split('T')[0];
+        document.getElementsByName("dateIn")[0].setAttribute('min', today);
+        document.getElementsByName("dateOff")[0].setAttribute('min', today);
 
         ctrl.save= function(pReserve) {
         	
@@ -47,7 +50,7 @@
         }
 
         function limpiar() {
-     		 ctrl.reserves = {}
+     		 ctrl.reserve= {}
     	}
 
     }

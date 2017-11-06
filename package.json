@@ -21,6 +21,7 @@
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-nodemon": "^2.2.1",
+    "md-date-picker": "^0.1.0",
     "mongoose": "^4.12.3",
     "nib": "^1.1.2"
   }

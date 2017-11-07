@@ -9,7 +9,8 @@
        var ctrl = this;
        	   ctrl.reserve = {};       
            ctrl.reserves= "";
-
+        ctrl.myDate = new Date();
+  ctrl.isOpen = false;
        var today = new Date().toISOString().split('T')[0];
         document.getElementsByName("dateIn")[0].setAttribute('min', today);
         document.getElementsByName("dateOff")[0].setAttribute('min', today);

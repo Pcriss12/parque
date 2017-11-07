@@ -1,0 +1,57 @@
+<section class="row container-fluid Reserve">
+	<div ng-include="'include/nav.html'"></div>
+</section>
+
+<!-- main -->
+<section class="reserve1 row">
+
+		<div class="row">
+			<div class="choose col-md-8 col-md-offset-2">
+        <h3>Espacio a reservar</h3>
+        <div class="options">
+          <label class="checkbox-inline"><input type="checkbox" value="Camping">Camping</label>
+          <label class="checkbox-inline"><input type="checkbox" value="Cabaña">Cabaña</label>
+          <label class="checkbox-inline"><input type="checkbox" value="Areas">Areas Familiares</label>
+        </div>
+
+        <h3>Caminata a reservar</h3>
+        <div class="options">
+          <label class="checkbox-inline"><input type="checkbox" value="Camping">3 kilómetros</label>
+          <label class="checkbox-inline"><input type="checkbox" value="Cabaña">5 kilómetros</label>
+          <label class="checkbox-inline"><input type="checkbox" value="Areas">7 kilómetros</label>
+        </div>
+
+        <div class="spaces">
+          <h2>Seleccione la fecha</h2>
+          <h4>Fecha de llegada</h4>
+
+          <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
+            <span class="input-group-addon"> <span class="fa fa-calendar"></span></span>
+            <input type="date" name="">
+          </div>
+          <h4>Fecha de salida</h4>
+          <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
+            <span class="input-group-addon"> <span class="fa fa-calendar"></span></span>
+            <input type="date" name="">
+          </div>
+        </div>
+      
+
+      <div class="form-group">
+        <label for="comment">Comentarios para la reserva:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-success">Reservar</button>
+      </div>
+      </div>
+
+		</div>
+</section>
+
+
+<!-- footer -->
+<div class="wrapper row4">
+    <div ng-include="'include/footer.html'"></div>
+  </div>

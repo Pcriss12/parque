@@ -1,0 +1,60 @@
+@import url("framework.css");
+
+.Activity{
+	background-image: url("../img/img9.jpg"); 
+	background-repeat: 
+	no-repeat;
+	background-size: 100%; 
+	background-attachment: 
+	fixed;
+	text-align: center;
+	justify-content: center;
+}
+
+.intro{
+	background-color: #ffffff;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 110px;
+	padding-top: 50px;
+}
+.blank1{
+	background-color: #ffffff;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.blank2{
+	background-color: #ffffff;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+	padding: 30px;
+	margin: 0 auto;	
+	margin-bottom: 130px;
+}
+
+.instalation{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.blank1 h1,.blank1 h3{
+	text-align: center;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+#acti{
+	margin-left: 4%;
+}
+#contInsta{
+	padding-top: 20px;
+}
+#contInsta p{
+	margin-bottom: 30px;
+}
+#contActi{
+	padding-top: 20px;
+}

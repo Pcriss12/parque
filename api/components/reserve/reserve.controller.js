@@ -20,16 +20,23 @@ module.exports.save = function(req, res){
     var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      // user: 'email',
-      // pass: 'pass'
+      user: 'test170992@gmail.com',
+      pass: '71737314Kevin'
     }
   });
 
   var mailOptions = {
-    from: 'email',
+    from: 'test170992@gmail.com',
     to: req.body.email,
     subject: 'Confirmación de reserva ',
-    text: 'Saludos: ' + req.body.name 
+    text: 'Saludos: ' + req.body.name + 
+                 'Datos reserva' +
+                 req.body.email + 
+                 req.body.phone +
+                 req.body.homeA +
+                 req.body.homeB +
+                 req.body.homeD 
+
   };
 
   transporter.sendMail(mailOptions, function(error, info) {

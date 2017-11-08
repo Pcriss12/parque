@@ -7,8 +7,8 @@
 .row1, .row1 a{}
 .row2, .row2 a{}
 .row3, .row3 a{}
-.row4, .row4 a{}
-.row5, .row5 a{}
+/*.row4, .row4 a{}
+.row5, .row5 a{}*/
 
 
 /* Header
@@ -221,7 +221,7 @@ hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
 input:focus, textarea:focus, *:required:focus{border-color:#56AED4;}
 .overlay{color:#FFFFFF; background-color:inherit;}
-.overlay::after{color:inherit; background-image: url("../img/background1.jpg");  background-repeat: no-repeat;
+.overlay::after{color:inherit; background-image: url("http://res.cloudinary.com/parquegermanico/image/upload/v1510092502/background1_it6ddm.jpg");  background-repeat: no-repeat;
 background-size: 100%; background-attachment: fixed; background-position: center top;}
 .nospace{
 	padding-bottom: 25px;
@@ -315,7 +315,7 @@ table a, #comments a{background-color:inherit;}
 
 /* Mobile Devices
 --------------------------------------------------------------------------------------------------------------- */
-@media screen and (max-width:900px){
+@media screen and (max-width:766px){
 	.hoc{max-width:90%;}
 
 	#header{}
@@ -345,6 +345,7 @@ table a, #comments a{background-color:inherit;}
 	.split{font-size:0.875rem }
 
 }
+
 @media screen and (max-width:750px){
 	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
 	/*.fl_left, .fl_right{display:block; float:none;}*/

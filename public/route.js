@@ -51,7 +51,7 @@
 		.state('gallery',{
 			url: '/gallery',
 			templateUrl: './components/gallery/gallery.html',
-			css: './css/galleryStyle.css'
+			css: './css/style.gallery.css'
 		})
 
 		.state('information',{
@@ -62,4 +62,3 @@
 		$urlRouterProvider.otherwise('/Home');
   };
 })();
-

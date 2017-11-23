@@ -12,7 +12,14 @@
 		.state('landing',{
 			url: '/Home',
 			templateUrl: './components/landing/landing.html',
-			css: './css/layout.css'
+			css: './css/style.gallery.css',
+			// resolve: {
+			// 	load: ['$ocLazyLoad', function($ocLazyLoad){
+			// 		return $ocLazyLoad.load('./components/landing/landing.controller.js')
+			// 	}]
+			// },
+			// controller: 'landingController',
+			// controllerAs: 'ctrl'
 		})
 
 		.state('activity',{
@@ -37,7 +44,7 @@
 		.state('gallery',{
 			url: '/gallery',
 			templateUrl: './components/gallery/gallery.html',
-			css: './css/galleryStyle.css'
+			css: './css/style.gallery.css'
 		})
 
 		.state('information',{
@@ -48,4 +55,3 @@
 		$urlRouterProvider.otherwise('/Home');
   };
 })();
-

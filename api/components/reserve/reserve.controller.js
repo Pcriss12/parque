@@ -26,36 +26,11 @@ module.exports.save = function(req, res){
   });
 
   var mailOptions = {
-    from: 'test170992@gmail.com',
+    from: 'ParqueGermanico <test170992@gmail.com>',
     to: req.body.email,
-    subject: 'Confirmación de reserva ',
-    html: '<h1>Datos de reserva</h1>',
-    // <br>
-    text: 'Nombre: ' +  req.body.name,
-    // <br>
-    text: 'Telefono: ' + req.body.phone,
-    // <br>
-    text: 'Email: ' + req.body.email,
-    // <br>
-    text: 'Camping: ' + req.body.homeA,
-    // <br>
-    text: 'Cabaña: ' + req.body.homeB,
-    // <br>
-    text: 'Areas Familiar: ' + req.body.homeC,
-    // <br>
-    text: 'Caminata 3 kilometros: ' + req.body.walk3,
-    // <br>
-    text: 'Caminata 5 kilometros: ' + req.body.walk5,
-    // <br>
-    text: 'Caminata 7 kilometros: ' + req.body.walk7,
-    // <br>
-    text: 'Fecha de entrada: ' + req.body.dateIn,
-    // <br>
-    text: 'Fecha de salida: ' +req.body.dateOff,
-    // <br>
-    text: 'Comentarios: ' + req.body.comme,
-    // <br>
-    html: '<img src="https://res.cloudinary.com/parquegermanico/image/upload/v1510093842/logo_uajvtu.png">    ' 
+    subject: 'Confirmación de reserva',
+    text: req.body.email + ' ' + req.body.name + ' ' + req.body.homeA + ' ' + req.body.homeB + ' ' + req.body.homeC + ' ' + req.body.walk3 + ' ' + req.body.walk5 + ' ' + req.body.walk7 + ' ' + req.body.dateIn + ' ' + req.body.dateOff + ' ' + req.body.comment
+    
   };
 
   transporter.sendMail(mailOptions, function(error, info) {

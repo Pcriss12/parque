@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
-
+body{
+    font-family: 'Quicksand', sans-serif;
+}
 .gal-container{
 	padding: 12px;
 }
@@ -8,7 +10,7 @@
 	padding: 3px;
 }
 .gal-item .box{
-	height: 350px;
+	height: 300px;
 	overflow: hidden;
 }
 .box img{
@@ -31,7 +33,7 @@
 	top: 3px;
 	bottom: 3px;
 	text-align: center;
-    line-height: 350px;
+    line-height: 300px;
     font-size: 30px;
     color: #fff;
     -webkit-transition: all 0.5s ease-in-out 0s;
@@ -117,22 +119,10 @@
     width: 55%;
     margin: 50 auto;
 }
+
 }
 @media (max-width: 768px) {
     .gal-container .modal-content{
         height:250px;
     }
-}
-/* Footer Style */
-i.red{
-    color:#BC0213;
-}
-.gal-container{
-    padding-bottom:75px;
-}
-footer{
-    font-family: 'Quicksand', sans-serif;
-}
-footer a,footer a:hover{
-    color: #88C425;
 }

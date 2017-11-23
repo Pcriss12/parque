@@ -1,6 +1,6 @@
 
   <div id="top">
-  <div class="bgded" style="background-image:url('./img/img8.jpg'); background-repeat: no-repeat; background-position: center center;">
+  <div class="bgded" style="background-image:url('./img/img8-min.jpg'); background-repeat: no-repeat; background-position: center center;">
   <div ng-include="'include/nav.html'"></div>
   <div class="wrapper row2">
     <div id="breadcrumb" class="hoc clear">
@@ -10,7 +10,7 @@
 </div>
 <div class="wrapper row3">
   <main class="hoc container clear">
-    
+
     <!-- main -->
 <section class="reserve1 row">
 
@@ -18,7 +18,7 @@
       <div class="choose col-md-10 col-md-offset-1">
 
         <h2>Reserva</h2>
-               
+
         <div id="user">
           <div class="input-group">
               <span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -33,7 +33,7 @@
           </div>
         </div>
 
-        
+
         <div id="telephone">
           <div class="input-group">
               <span class="input-group-addon"><i class="fa fa-phone"></i></span>
@@ -61,13 +61,13 @@
 
           <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
             <span class="input-group-addon"> <span class="fa fa-calendar"></span></span>
-            <input type="date" id="Date" ng-model="ctrl.reserve.dateIn" name="dateIn" min-date="today" format-day='d' max-mode="day" show-weeks="false" required=""> 
+            <input type="date" id="Date" ng-model="ctrl.reserve.dateIn" name="dateIn" min-date="today" format-day='d' max-mode="day" show-weeks="false" required="">
           </div>
           <h4>Fecha de salida</h4>
           <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
             <span class="input-group-addon"> <span class="fa fa-calendar"></span></span>
             <input type="date" id="Date" ng-model="ctrl.reserve.dateOff" name="dateOff" min-date="today" format-day='d' max-mode="ctrl.reserve.dateIn" show-weeks="false" required="">
-            
+
           </div>
         </div>
 
@@ -79,7 +79,7 @@
       <div>
         <button ng-click="ctrl.reset()" ng-disabled="frmReserve.$invalid" type="submit" class="btn btn-success">Reservar</button>
       </div>
-      
+
 
     </form>
 </section>
@@ -106,7 +106,7 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body" id="msjReserva">
-          <h2 ng-show="vm.userReg"><span class="glyphicon glyphicon-ok"></span>Su reserva fue existosa.</h2>        
+          <h2 ng-show="vm.userReg"><span class="glyphicon glyphicon-ok"></span>Su reserva fue existosa.</h2>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

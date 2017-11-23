@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
-body{
-    font-family: 'Quicksand', sans-serif;
-}
+
 .gal-container{
 	padding: 12px;
 }
@@ -130,7 +128,6 @@ i.red{
     color:#BC0213;
 }
 .gal-container{
-    padding-top :75px;
     padding-bottom:75px;
 }
 footer{

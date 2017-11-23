@@ -1,0 +1,117 @@
+
+  <div id="top">
+  <div class="bgded" style="background-image:url('./img/img8.jpg'); background-repeat: no-repeat; background-position: center center;">
+  <div ng-include="'include/nav.html'"></div>
+  <div class="wrapper row2">
+    <div id="breadcrumb" class="hoc clear">
+      <span class="fa fa-facebook-official"> facebook.com</span>
+    </div>
+  </div>
+</div>
+<div class="wrapper row3">
+  <main class="hoc container clear">
+    
+    <!-- main -->
+<section class="reserve1 row">
+
+    <form class="frmReserve row" name="frmReserve" ng-submit="ctrl.save(ctrl.reserve)" novalidate autocomplete="off">
+      <div class="choose col-md-10 col-md-offset-1">
+
+        <h2>Reserva</h2>
+               
+        <div id="user">
+          <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              <input id="name" type="text" class="form-control" name="name" placeholder="Nombre completo" type="text" ng-model="ctrl.reserve.name" ng-pattern="/^[a-zA-Z\s]*$/" required>
+          </div>
+        </div>
+
+        <div id="mail">
+          <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+              <input id="email" type="text" class="form-control" name="email" placeholder="Correo electronico" ng-model="ctrl.reserve.email" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" required>
+          </div>
+        </div>
+
+        
+        <div id="telephone">
+          <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+              <input id="phone" type="text" class="form-control" name="phone" placeholder="Numero de telefono" ng-model="ctrl.reserve.phone" ng-pattern="/^[0-9]{8}$/" required>
+          </div>
+        </div>
+
+        <h3>Espacio a reservar</h3>
+        <div class="options" name="home" id="home">
+          <label class="checkbox-inline"><input type="checkbox" value="Camping" ng-model="ctrl.reserve.homeA">Camping</label>
+          <label class="checkbox-inline"><input type="checkbox" value="Cabaña" ng-model="ctrl.reserve.homeB">Cabaña</label>
+          <label class="checkbox-inline"><input type="checkbox" value="Areas Familiares" ng-model="ctrl.reserve.homeC">Areas Familiares</label>
+        </div>
+
+        <h3>Caminata a reservar</h3>
+        <div class="options" name="walk" id="walk">
+          <label class="checkbox-inline"><input type="checkbox" value="3 kilómetros"  ng-model="ctrl.reserve.walk3">3 kilómetros</label>
+          <label class="checkbox-inline"><input type="checkbox" value="5 kilómetros"  ng-model="ctrl.reserve.walk5">5 kilómetros</label>
+          <label class="checkbox-inline"><input type="checkbox" value="7 kilómetros"  ng-model="ctrl.reserve.walk7">7 kilómetros</label>
+        </div>
+
+        <div class="spaces">
+          <h2>Seleccione la fecha</h2>
+          <h4>Fecha de llegada</h4>
+
+          <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
+            <span class="input-group-addon"> <span class="fa fa-calendar"></span></span>
+            <input type="date" id="Date" ng-model="ctrl.reserve.dateIn" name="dateIn" min-date="today" format-day='d' max-mode="day" show-weeks="false" required=""> 
+          </div>
+          <h4>Fecha de salida</h4>
+          <div class="input-group col-xs-offset-3 col-md-offset-3 dates">
+            <span class="input-group-addon"> <span class="fa fa-calendar"></span></span>
+            <input type="date" id="Date" ng-model="ctrl.reserve.dateOff" name="dateOff" min-date="today" format-day='d' max-mode="ctrl.reserve.dateIn" show-weeks="false" required="">
+            
+          </div>
+        </div>
+
+      <div class="form-group">
+        <label for="comment">Comentarios para la reserva:</label>
+        <textarea class="form-control" rows="5" id="comment" name="comment" ng-model="ctrl.reserve.comment"></textarea>
+      </div>
+
+      <div>
+        <button ng-click="ctrl.reset()" ng-disabled="frmReserve.$invalid" type="submit" class="btn btn-success">Reservar</button>
+      </div>
+      
+
+    </form>
+</section>
+
+  </main>
+</div>
+<div class="wrapper row4">
+    <div ng-include="'include/footer.html'"></div>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="./public/scripts/jquery.min.js"></script>
+<script src="./public/scripts/jquery.backtotop.js"></script>
+<script src="./public/scripts/jquery.mobilemenu.js"></script>
+<!-- IE9 Placeholder Support -->
+<script src="./public/scripts/jquery.placeholder.min.js"></script>
+</div>
+
+  <!--modal de reserva-->
+  <div class="modal fade" id="modalMsj" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" id="msjReserva">
+          <h2 ng-show="vm.userReg"><span class="glyphicon glyphicon-ok"></span>Su reserva fue existosa.</h2>        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fin modal reserva   -->

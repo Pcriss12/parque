@@ -1,33 +1,7 @@
 <div id="top">
-  <div class="bgded overlay">
-    <header id="header" class="hoc clear">
-      <div id="logo">
-      <img src="img/logo2.png" alt="">
-      </div>
-      <div id="topbar" class="clear">
-        <nav id="mainav" class="navbar-default">
-          <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="clear nav">
-            <li class="active"><a href="landing.html">Inicio</a></li>
-            <li><a href="#">¿Quiénes somos?</a></li>
-            <li><a href="#">Galería</a></li>
-            <li><a href="#">Servicios y Actividades</a></li>
-            <li><a href="#">Reservaciones</a></li>
-            <li><a href="#">Contáctenos</a></li>
-          </ul>
-        </div>
-        </nav>
-      </div>
-    </header>
+
+  <div class="bgded"  style="background-image:url('./img/background1.jpg'); background-repeat: no-repeat; background-position: center center;">
+    <div ng-include="'include/nav.html'"></div>
     <div id="pageintro" class="hoc clear">
       <article class="introtxt">
         <h2 class="heading">Parque</h2>
@@ -79,6 +53,7 @@
         </ul>
       </div>
       <div class="clear"></div>
+      <a class="btn small" href="#!/gallery">Leer más</a>
     </main>
   </div>
   <div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/03.png');">
@@ -88,21 +63,21 @@
           <article class="block inspace-30 borderedbox bg_white"><a href="#"><i class="btmspace-15 fa fa-4x fa-coffee"></i></a>
             <h6 class="font-x1">Servicios</h6>
             <p class="nospace">Sapien nullam pulvinar nulla vel rutrum imperdiet nunc ante.</p>
-            <footer><a class="btn small" href="#">Leer más</a></footer>
+            <footer><a class="btn small" href="#!/Activity">Leer más</a></footer>
           </article>
         </li>
         <li class="one_third">
           <article class="block inspace-30 borderedbox bg_white"><a href="#"><i class="btmspace-15 fa fa-4x fa-tree"></i></a>
             <h6 class="font-x1">Actividades</h6>
             <p class="nospace">Aliquet diam aenean malesuada massa massa sed lobortis risus.</p>
-            <footer><a class="btn small" href="#">Leer más</a></footer>
+            <footer><a class="btn small" href="#!/Activity">Leer más</a></footer>
           </article>
         </li>
         <li class="one_third">
           <article class="block inspace-30 borderedbox bg_white"><a href="#"><i class="btmspace-15 fa fa-4x fa-credit-card-alt"></i></a>
             <h6 class="font-x1">Pagos y Precios</h6>
             <p class="nospace">Duis dui turpis egestas id odio et faucibus egestas enim fusce.</p>
-            <footer><a class="btn small" href="#">Leer más</a></footer>
+            <footer><a class="btn small" href="#!/Reserve">Leer más</a></footer>
           </article>
         </li>
       </ul>
@@ -112,49 +87,9 @@
     </div>
   </div>
   <div class="wrapper row4">
-    <footer id="footer" class="hoc clear">
-      <div class="center btmspace-50">
-        <h4 class="nospace uppercase">Contáctenos</h4>
-      </div>
-      <hr class="btmspace-50">
-      <div class="group">
-        <div class="one_quarter">
-          <h6 class="title">Datos de contacto</h6>
-          <ul class="nospace linklist contact">
-            <li><i class="fa fa-phone"></i> +00 (123) 456 7890<br>
-              +00 (123) 456 7890</li>
-            <li><i class="fa fa-fax"></i> +00 (123) 456 7890</li>
-            <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
-          </ul>
-        </div>
-        <div class="one_quarter">
-          <h6 class="title">Social</h6>
-          <ul class="nospace linklist">
-            <li><a href="#">Semper libero ornare sit</a></li>
-            <li><a href="#">Amet mauris mattis euismod</a></li>
-            <li><a href="#">Ex sit amet porta tellus</a></li>
-            <li><a href="#">Facilisis pulvinar vestibulum</a></li>
-          </ul>
-        </div>
-        <div class="one_quarter">
-          <h6 class="title">Ubicación</h6>
-          <ul class="nospace linklist contact">
-            <li><i class="fa fa-map-marker"></i>
-              <address>
-              Street Name &amp; Number, Town, Postcode/Zip
-              </address>
-            </li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+      <div ng-include="'include/footer.html'"></div>
   </div>
-  <div class="wrapper row5">
-    <div id="copyright" class="hoc clear">
-      <p class="fl_left">Copyright &copy; 2017 - All Rights Reserved </p>
-    </div>
-  </div>
+
   <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
   <!-- JAVASCRIPTS -->
   <script src="./public/scripts/jquery.min.js"></script>

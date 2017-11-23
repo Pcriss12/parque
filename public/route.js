@@ -12,7 +12,7 @@
 		.state('landing',{
 			url: '/Home',
 			templateUrl: './components/landing/landing.html',
-			css: './css/layout.css',
+			css: './css/style.gallery.css',
 			// resolve: {
 			// 	load: ['$ocLazyLoad', function($ocLazyLoad){
 			// 		return $ocLazyLoad.load('./components/landing/landing.controller.js')
